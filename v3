@@ -1,0 +1,125 @@
+print ("Calculadora de notas")
+
+print ("Insira no código as notas dos respectivos trimestres")
+
+media = 18
+matematica = 8
+soma = media-matematica
+
+print("Segue a nota de matemática", matematica)
+print("Para passar de ano em matemática falta", media - matematica)
+if soma < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma, "pontos para passar de ano")
+
+quimica = 9+3
+soma1 = media-quimica
+
+print ("Segue a nota de química", quimica)
+print ("Para passar de ano em química falta", media - quimica)
+if soma1 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma1, "pontos para passar de ano")
+
+ingles = 10+10
+soma2 = media-ingles
+
+print ("Segue a nota de inglês", ingles)
+print ("Para passar de ano em inglês falta", media - ingles)
+if soma2 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma2, "pontos para passar de ano")
+    
+portugues = 6
+soma3 = media-portugues
+
+print ("Segue a nota de português", portugues)
+print ("Para passar de ano em português falta", media - portugues)
+if soma3 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma3, "pontos para passar de ano")
+
+geografia = 7
+soma4 = media-geografia
+
+print ("Segue a nota de geografia", geografia)
+print ("Para passar de ano em geografia falta", media - geografia)
+if soma4 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma4, "pontos para passar de ano")
+
+historia = 8.5
+soma5 = media-historia
+
+print ("Segue a nota de história", historia)
+print ("Para passar de ano em história falta", media - geografia)
+if soma5 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma5, "pontos para passar de ano")
+
+geometriaaplicada = 7.5+9.5
+soma6 = media-geometriaaplicada
+
+print ("Segue a nota de geometria aplicada", geometriaaplicada)
+print ("Para passar de ano em Geometria aplicada falta", media - geometriaaplicada)
+if soma6 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma6, "pontos para passar de ano")
+
+linguagemmatematica = 8+6.5
+soma7 = media-linguagemmatematica
+
+print ("Segue a nota de Linguagem Matemática", linguagemmatematica)
+print ("Para passar de ano em Linguagem Matemática falta", media - linguagemmatematica)
+if soma7 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma7, "pontos para passar de ano")
+
+matematicadainovacao = 8
+soma8 = media-matematicadainovacao
+
+print ("Segue a nota de Matemática da Inovação", matematicadainovacao)
+print ("Para passar de ano em Matemática da Inovação falta", media - matematicadainovacao)
+if soma8 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma8, "pontos para passar de ano")
+
+modelagem = 9.5
+soma9 = media-modelagem
+
+print ("Segue a nota de Modelagem Matemática", modelagem)
+print ("Para passar de ano em Modelagem Matemática falta", media - modelagem)
+if soma9 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma9, "pontos para passar de ano")
+
+monitoramento = 10
+soma10 = media-monitoramento
+
+print ("Segue a nota de Monitoramento Ambiental", monitoramento)
+print ("Para passar de ano em Monitoramento Ambiental falta", media - monitoramento)
+if soma10 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma10, "pontos para passar de ano")
+
+impactos = 7+6
+soma11 = media-impactos
+
+print ("Segue a nota de Impactos Tecnológicos", impactos)
+print ("Para passar de ano em Impactos Tecnológicos falta", media - impactos)
+if soma11 < 0:
+    print("Parabéns, você passou de ano nesta matéria")
+else:
+    print("Ainda faltam", soma11, "pontos para passar de ano")
+
