@@ -86,51 +86,51 @@ while True:
         media12 = 18 - nota_impactos
 
         # Verificar a parabenização
-        if media1>= 0:
+        if media1<= 0:
             parabenizacao_texto1 = "Você passou em Matemática"
         else:
             parabenizacao_texto1 = "Ainda faltam", media1, "pontos para passar de ano"
-        if media2>= 0:
+        if media2<= 0:
             parabenizacao_texto2 = "Você passou em Química"
         else:
             parabenizacao_texto2 = "Ainda faltam", media2, "pontos para passar de ano"
-        if media3>= 0:
+        if media3<= 0:
             parabenizacao_texto3 = "Você passou em Inglês"
         else:
             parabenizacao_texto3 = "Ainda faltam", media3, "pontos para passar de ano"
-        if media4>= 0:
+        if media4<= 0:
             parabenizacao_texto4 = "Você passou em Português"
         else:
             parabenizacao_texto4 = "Ainda faltam", media4, "pontos para passar de ano"
-        if media5>= 0:
+        if media5<= 0:
             parabenizacao_texto5 = "Você passou em Geografia"
         else:
             parabenizacao_texto5 = "Ainda faltam", media5, "pontos para passar de ano"
-        if media6>= 0:
+        if media6<= 0:
             parabenizacao_texto6 = "Você passou em História"
         else:
             parabenizacao_texto6 = "Ainda faltam", media6, "pontos para passar de ano"
-        if media7>= 0:
+        if media7<= 0:
             parabenizacao_texto7 = "Você passou em Geometria"
         else:
             parabenizacao_texto7 = "Ainda faltam", media7, "pontos para passar de ano"
-        if media8>= 0:
+        if media8<= 0:
             parabenizacao_texto8 = "Você passou em Linguagem"
         else:
             parabenizacao_texto8 = "Ainda faltam", media8, "pontos para passar de ano"
-        if media9>= 0:
+        if media9<= 0:
             parabenizacao_texto9 = "Você passou em Inovação"
         else:
             parabenizacao_texto9 = "Ainda faltam", media9, "pontos para passar de ano"
-        if media10>= 0:
+        if media10<= 0:
             parabenizacao_texto10 = "Você passou em Modelagem"
         else:
             parabenizacao_texto10 = "Ainda faltam", media10, "pontos para passar de ano"
-        if media11>= 0:
+        if media11<= 0:
             parabenizacao_texto11 = "Você passou em Monitoramento"
         else:
             parabenizacao_texto11 = "Ainda faltam", media11, "pontos para passar de ano"
-        if media12>= 0:
+        if media12<= 0:
             parabenizacao_texto12 = "Você passou em Impactos"
         else:
             parabenizacao_texto12 = "Ainda faltam", media12, "pontos para passar de ano"
