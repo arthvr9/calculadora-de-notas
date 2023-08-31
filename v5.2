@@ -1,0 +1,92 @@
+import PySimpleGUI as sg
+
+# Layout
+sg.theme('Tan')
+layout = [
+    [sg.Text('Notas Primeiro Trimestre')],
+    [sg.Text('Matemática'), sg.Input(key='matematica', text_color='purple')],
+    [sg.Text('Química'), sg.Input(key='quimica')],
+    [sg.Text('Inglês'), sg.Input(key='ingles')],
+    [sg.Text('Português'), sg.Input(key='portugues')],
+    [sg.Text('Geografia'), sg.Input(key='geografia')],
+    [sg.Text('História'), sg.Input(key='historia')],
+    [sg.Text('Geometria'), sg.Input(key='geometria')],
+    [sg.Text('Linguagem'), sg.Input(key='linguagem')],
+    [sg.Text('Inovação'), sg.Input(key='inovacao')],
+    [sg.Text('Modelagem'), sg.Input(key='modelagem')],
+    [sg.Text('Monitoramento'), sg.Input(key='monitoramento')],
+    [sg.Text('Impactos'), sg.Input(key='impactos')],
+    [sg.Text('Notas Segundo Trimestre')],
+    [sg.Text('Matemática'), sg.Input(key='matematica2')],
+    [sg.Text('Química'), sg.Input(key='quimica2')],
+    [sg.Text('Inglês'), sg.Input(key='ingles2')],
+    [sg.Text('Português'), sg.Input(key='portugues2')],
+    [sg.Text('Geografia'), sg.Input(key='geografia2')],
+    [sg.Text('História'), sg.Input(key='historia2')],
+    [sg.Text('Geometria'), sg.Input(key='geometria2')],
+    [sg.Text('Linguagem'), sg.Input(key='linguagem2')],
+    [sg.Text('Inovação'), sg.Input(key='inovacao2')],
+    [sg.Text('Modelagem'), sg.Input(key='modelagem2')],
+    [sg.Text('Monitoramento'), sg.Input(key='monitoramento2')],
+    [sg.Text('Impactos'), sg.Input(key='impactos2')],
+    [sg.Button('Calcular notas')]
+]
+
+# Janela
+janela = sg.Window('Calculadora de Notas', layout)
+
+# Ler os eventos
+while True:
+    eventos, valores = janela.read()
+    if eventos == sg.WINDOW_CLOSED:
+        break
+    if eventos == 'Calcular notas':
+        # Realizar o cálculo das notas e exibir os resultados aqui
+        nota_matematica = float(valores['matematica']) + float(valores['matematica2'])
+        nota_quimica = float(valores['quimica']) + float(valores['quimica2'])
+        nota_ingles = float(valores['ingles']) + float(valores['ingles2'])
+        nota_portugues = float(valores['portugues']) + float(valores['portugues2'])
+        nota_geografia = float(valores['geografia']) + float(valores['geografia2'])
+        nota_historia = float(valores['historia']) + float(valores['historia2'])
+        nota_geometria = float(valores['geometria']) + float(valores['geometria2'])
+        nota_linguagem = float(valores['linguagem']) + float(valores['linguagem2'])
+        nota_inovacao = float(valores['inovacao']) + float(valores['inovacao2'])
+        nota_modelagem = float(valores['modelagem']) + float(valores['modelagem2'])
+        nota_monitoramento = float(valores['monitoramento']) + float(valores['monitoramento2'])
+        nota_impactos = float(valores['impactos']) + float(valores['impactos2'])
+
+        # Verificar a parabenização
+        parabenizacao_texto1 = "Você passou em Matemática" if nota_matematica >= 18 else f"Ainda faltam {18 - nota_matematica} pontos para passar de ano em Matemática"
+        parabenizacao_texto2 = "Você passou em Química" if nota_quimica >= 18 else f"Ainda faltam {18 - nota_quimica} pontos para passar de ano em Química"
+        parabenizacao_texto3 = "Você passou em Inglês" if nota_ingles >= 18 else f"Ainda faltam {18 - nota_ingles} pontos para passar de ano em Inglês"
+        parabenizacao_texto4 = "Você passou em Português" if nota_portugues >= 18 else f"Ainda faltam {18 - nota_portugues} pontos para passar de ano em Português"
+        parabenizacao_texto5 = "Você passou em Geografia" if nota_geografia >= 18 else f"Ainda faltam {18 - nota_geografia} pontos para passar de ano em Geografia"
+        parabenizacao_texto6 = "Você passou em História" if nota_historia >= 18 else f"Ainda faltam {18 - nota_historia} pontos para passar de ano em História"
+        parabenizacao_texto7 = "Você passou em Geometria" if nota_geometria >= 18 else f"Ainda faltam {18 - nota_geometria} pontos para passar de ano em Geometria"
+        parabenizacao_texto8 = "Você passou em Linguagem" if nota_linguagem >= 18 else f"Ainda faltam {18 - nota_linguagem} pontos para passar de ano em Linguagem"
+        parabenizacao_texto9 = "Você passou em Inovação" if nota_inovacao >= 18 else f"Ainda faltam {18 - nota_inovacao} pontos para passar de ano em Inovação"
+        parabenizacao_texto10 = "Você passou em Modelagem" if nota_modelagem >= 18 else f"Ainda faltam {18 - nota_modelagem} pontos para passar de ano em Modelagem"
+        parabenizacao_texto11 = "Você passou em Monitoramento" if nota_monitoramento >= 18 else f"Ainda faltam {18 - nota_monitoramento} pontos para passar de ano em Monitoramento"
+        parabenizacao_texto12 = "Você passou em Impactos" if nota_impactos >= 18 else f"Ainda faltam {18 - nota_impactos} pontos para passar de ano em Impactos"
+
+        # Construir o texto completo de parabenização
+        parabenizacoes_py = f"""
+        {parabenizacao_texto1}
+        {parabenizacao_texto2}
+        {parabenizacao_texto3}
+        {parabenizacao_texto4}
+        {parabenizacao_texto5}
+        {parabenizacao_texto6}
+        {parabenizacao_texto7}
+        {parabenizacao_texto8}
+        {parabenizacao_texto9}
+        {parabenizacao_texto10}
+        {parabenizacao_texto11}
+        {parabenizacao_texto12}
+        """
+
+        # Exibir o pop-up com as parabenizações
+        sg.popup(parabenizacoes_py, title="Notas finais")
+
+# Fechar a janela ao sair do loop
+janela.close()
