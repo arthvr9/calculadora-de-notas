@@ -709,18 +709,18 @@ class Program
             float Somamodelagem2 = (modelagem2 * 3);
             float Somamonitoramento2 = (monitoramento2 * 3);
 
-            float Somamatematica3 = (matematica * 4);
-            float Somaquimica3 = (quimica * 4);
-            float Somaingles3 = (ingles * 4);
-            float Somaportugues3 = (portugues * 4);
-            float Somageografia3 = (geografia * 4);
-            float Somahistoria3 = (historia * 4);
-            float Somageometria3 = (geometria * 4);
-            float Somaimpactos3 = (impactos * 4);
-            float Somalinguagem3 = (linguagem * 4);
-            float Somainovacao3 = (inovacao * 4);
-            float Somamodelagem3 = (modelagem * 4);
-            float Somamonitoramento3 = (monitoramento * 4);
+            float Somamatematica3 = (matematica3 * 4);
+            float Somaquimica3 = (quimica3 * 4);
+            float Somaingles3 = (ingles3 * 4);
+            float Somaportugues3 = (portugues3 * 4);
+            float Somageografia3 = (geografia3 * 4);
+            float Somahistoria3 = (historia3 * 4);
+            float Somageometria3 = (geometria3 * 4);
+            float Somaimpactos3 = (impactos3 * 4);
+            float Somalinguagem3 = (linguagem3 * 4);
+            float Somainovacao3 = (inovacao3 * 4);
+            float Somamodelagem3 = (modelagem3 * 4);
+            float Somamonitoramento3 = (monitoramento3 * 4);
 
             // Total
 
